@@ -4,9 +4,12 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "session": "node generate-session.js"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "dotenv": "^17.4.0",
+    "express": "^4.22.1",
+    "playwright": "^1.59.1"
   }
 }
