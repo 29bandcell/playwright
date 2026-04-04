@@ -5,6 +5,14 @@ import fs from 'fs';
 const app = express();
 app.use(express.json());
 
+app.get('/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    service: 'playwright-api',
+    timestamp: new Date().toISOString()
+  });
+});
+
 const API_KEY = process.env.API_KEY;
 
 // helper
