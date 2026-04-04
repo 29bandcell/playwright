@@ -92,6 +92,11 @@ app.post('/renovar', async (req, res) => {
   let context;
 
   try {
+  // código aqui
+} catch (error) {
+  console.error(error);
+  throw error;
+}
     const started = await startBrowser();
     browser = started.browser;
     context = started.context;
