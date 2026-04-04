@@ -1,4 +1,4 @@
-FROM node:20
+FROM mcr.microsoft.com/playwright:v1.59.1-noble
 
 WORKDIR /app
 
@@ -7,6 +7,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3001
 
 CMD ["npm", "start"]
